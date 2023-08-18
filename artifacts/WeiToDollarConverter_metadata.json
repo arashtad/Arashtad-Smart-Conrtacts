@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_priceFeed",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountInWei",
+						"type": "uint256"
+					}
+				],
+				"name": "ConvertWeiToDollar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "priceFeed",
+				"outputs": [
+					{
+						"internalType": "contract AggregatorV3Interface",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/priceConversion.sol": "WeiToDollarConverter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/aggregator.sol": {
+			"keccak256": "0x92c1f92ebc8b8164e5d88545415abe076a05b1355d68fe0c7cbe32f40f5f4abf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://875b0b515a42cc4197618a2997f444e8b316e1dfdaaca6c7cde3334dc9b2e831",
+				"dweb:/ipfs/QmcmVanSTG1pfMefcgoypuoBDeUEoXiaxTA4fT4vTpehWR"
+			]
+		},
+		"contracts/priceConversion.sol": {
+			"keccak256": "0x7dde32426d03f47780aea3b675cf76c9a2e3638d7dfbb355e9fcc0aba26d8bca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://44be3b7452af47f697f732510b80e1b9533b039eedc7733786982496967e232e",
+				"dweb:/ipfs/QmSQ3GtsbY9ZB5MvcoA7BiHUy7YT65G8Rsuy8gdPT5jw2W"
+			]
+		}
+	},
+	"version": 1
+}
